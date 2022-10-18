@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Responsive</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/card.css">
+    <link rel="stylesheet" href="assets/navbar.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <div class="logo">
+                        <h1>Maulana</h1>
+                    </div>
+                    <div class="menu-items">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">blogs</a></li>
+                        <li><a href="#">portfolio</a></li>
+                        <li><a href="#">contact</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <article>
+
+            <div class="content">
+                <div class="flex-container-column cardi">
+                    <div class="display">
+
+                        <h1 id="displayNumber">0</h1>
+                    </div>
+                    <div class="flex-container-row">
+                        <div class="button">7</div>
+                        <div class="button">8</div>
+                        <div class="button">9</div>
+                        <div class="button negative">+/-</div>
+                    </div>
+                    <div class="flex-container-row">
+                        <div class="button">4</div>
+                        <div class="button">5</div>
+                        <div class="button">6</div>
+                        <div class="button operator">-</div>
+                    </div>
+                    <div class="flex-container-row">
+                        <div class="button">1</div>
+                        <div class="button">2</div>
+                        <div class="button">3</div>
+                        <div class="button operator">+</div>
+                    </div>
+                    <div class="flex-container-row">
+                        <div class="button clear">CE</div>
+                        <div class="button">0</div>
+                        <div class="button equals double">=</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <aside>
+            <div class="card-aside">
+                <div class="history">
+                    <h2>Riwayat Perhitungan</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Angka Pertama</th>
+                                <th>Operator</th>
+                                <th>Angka Kedua</th>
+                                <th>Hasil</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyList"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card-aside">
+                <ul class="cards">
+                    <li>
+                        <a href="" class="card">
+                            <img src="assets/image/maul.jpg" class="card__image" alt="" />
+                            <div class="card__overlay">
+                                <div class="card__header">
+                                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                        <path />
+                                    </svg>
+                                    <img class="card__thumb" src="assets/image/maul.jpg" alt="" />
+                                    <div class="card__header-text">
+                                        <h3 class="card__title">Muhammad Maulana Sidiq</h3>
+                                        <span class="card__status">Data Analyst & Web Developer</span>
+                                    </div>
+                                </div>
+                                <p class="card__description">Nama Saya Muhammad Maulana Sidiq, Mahasiswa Univesitas
+                                    Gunadarma, sedang mengambil magister jurusan manajemen Sistem Informasi</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+    </main>
+    <footer>
+        <p>Copyright &copy; Muhammad Maulana Sidiq</p>
+    </footer>
+</body>
+<script src="assets/calculator.js"></script>
+<script src="assets/storage.js"></script>
+
+</html>
